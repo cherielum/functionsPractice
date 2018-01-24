@@ -26,6 +26,18 @@ function laugh(num) {
  
   console.log(laugh(3));
  
-  
+  //Return prime number to show as true, and if not, 
+  //make a function to say which number it's divisible by
 
+  function isPrime(integer) {
+    for (var x = 2; x <integer; x++) {
+      if(integer % x === 0) {
+        console.log(integer + " is divisible by" + x);
+        return false;
+      }
+    }
+    return true;
+  }
+
+  
  
