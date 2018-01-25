@@ -52,4 +52,15 @@ function laugh(num) {
   
   console.log(subtractFour(5)); //25
  
-  
+  //Without pasting into your console, what do you think this code will print out?
+
+var x = 1;
+
+function addTwo() {
+  x = x + 2;
+}
+
+addTwo();
+x = x + 1;
+console.log(x); // 4 because fn addTwo()=3 THEN x=3 +1=4. 
+
