@@ -30,7 +30,8 @@ function laugh(num) {
   //make a function to say which number it's divisible by
 
   function isPrime(integer) {
-    for (var x = 2; x <integer; x++) {
+    for (var
+                                                                                                                        x = 2; x <integer; x++) {
       if(integer % x === 0) {
         console.log(integer + " is divisible by" + x);
         return false;
@@ -39,5 +40,16 @@ function laugh(num) {
     return true;
   }
 
+  //What number will be "printed" (to the JavaScript console)?
+
+  function square(x) {
+    return x * x;
+  }
   
+  function subtractFour(x) {
+    return square(x) - 4;
+  }
+  
+  console.log(subtractFour(5)); //25
  
+  
