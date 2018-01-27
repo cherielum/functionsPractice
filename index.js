@@ -64,3 +64,21 @@ addTwo();
 x = x + 1;
 console.log(x); // 4 because fn addTwo()=3 THEN x=3 +1=4. 
 
+//Create a function called buildTriangle() that will accept an input (the triangle at its widest width) and will return the string representation of a triangle. See the example output below.
+
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+      line += "* ";
+  }
+  return line + "\n";
+
+}
+
+function buildTriangle(num) {
+  return makeLine(num++);
+}
+
+var line;
+var makeLine; 
+console.log(buildTriangle(10));
