@@ -82,3 +82,14 @@ function buildTriangle(num) {
 var line;
 var makeLine; 
 console.log(buildTriangle(10));
+
+//Create a functional expression: where function is stored inside a variable
+// function has no name
+
+var catSays = function(max) {
+  var catMessage = "";
+  for (var i = 0; i < max; i++) {
+    catMessage += "meow ";
+  }
+  return catMessage;
+};
