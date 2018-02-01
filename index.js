@@ -101,3 +101,28 @@ function helloCat(callbackFunc) {
 
 // pass in catSays as a callback function
 helloCat(catSays);
+
+//function expression that assigns the function displayFavorite to the variable favoriteMovie
+
+var favoriteMovie = function displayFavorite (movieName) {
+  console.log("My favorite movie is " + movieName);
+};
+
+function movies (messageFunction, name) {
+  messageFunction (name); 
+}
+
+movies (favoriteMovie, "Finding Nemo");
+
+
+//function expression that assigns the function displayFavorite to the variable favoriteColor
+
+var displayFavorite = function favoriteColor (Color) {
+  console.log("My favorite color is "+ Color + "!");
+}
+
+function colors (showColor, color) {
+    showColor(color);
+}
+
+colors (displayFavorite, "blue");
