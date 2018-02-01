@@ -83,8 +83,8 @@ var line;
 var makeLine; 
 console.log(buildTriangle(10));
 
-//Create a functional expression: where function is stored inside a variable
-// function has no name
+//Create a functional expression where string returns meow a certain number of times 
+// i.e. three times
 
 var catSays = function(max) {
   var catMessage = "";
@@ -93,3 +93,11 @@ var catSays = function(max) {
   }
   return catMessage;
 };
+
+// function declaration helloCat accepting a callback
+function helloCat(callbackFunc) {
+  return "Hello " + callbackFunc(3);
+}
+
+// pass in catSays as a callback function
+helloCat(catSays);
