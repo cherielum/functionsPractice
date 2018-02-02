@@ -126,3 +126,15 @@ function colors (showColor, color) {
 }
 
 colors (displayFavorite, "blue");
+
+//return laugh based on number of "ha's"
+var laugh = function (numberOfLaughs){
+  var laughMessage = ""; 
+  for (var i =0; i < numberOfLaughs; i++){
+      laughMessage += "ha";
+  }
+  return laughMessage + "!";
+}
+
+console.log(laugh(10));
+
